@@ -1,7 +1,13 @@
 /**
- * @file Horizon.js
+ * @file index.js
+ * @author simpart
  */
-module.exports = class extends mofron.layout.Base {
+
+/**
+ * @class layout.Horizon
+ * @brief horizon layout class
+ */
+mofron.layout.Horizon = class extends mofron.Layout {
     layout () {
         try {
             if (0 !== this.exec_cnt) {
