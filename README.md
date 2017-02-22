@@ -1,5 +1,6 @@
 # mofron-layout-hrizon
 Horizon layout for mofron component.<br>
+This layout displays component side by side.<br>
 please see [here](https://github.com/simpart/mofron) about an overview of mofron.
 
 # Install
@@ -26,7 +27,7 @@ let text2 = new Text({
 
 new Frame({
     param   : [50,200],
-    layout  : new Horiz(),
+    layout  : new Horiz(),  // set horizon layout
     child   : [text1,text2],
     visible : true
 });
