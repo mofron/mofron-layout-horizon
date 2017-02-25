@@ -8,6 +8,17 @@
  * @brief horizon layout class
  */
 mofron.layout.Horizon = class extends mofron.Layout {
+    
+    constructor (prm_opt) {
+        try {
+            super();
+            this.name('Horizon');
+        } catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
+    
     layout () {
         try {
             this.target().style('display', '-webkit-flex');
@@ -18,3 +29,4 @@ mofron.layout.Horizon = class extends mofron.Layout {
         }
     }
 }
+module.exports = mofron.layout.Horizon;
