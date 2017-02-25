@@ -12,23 +12,14 @@ npm install mofron-layout-hrzcenter
 # sample
 ```javascript
 require('mofron');
-let Frame = require('mofron-comp-frame');
-let Text  = require('mofron-comp-text');
-let Horiz = require('mofron-layout-horizon');
+let Text    = require('mofron-comp-text');
+let Horizon = require('mofron-layout-horizon');
 
-let text1 = new Text({
-                    param : 'Test_1',
-                    size  : 30
-                });
-let text2 = new Text({
-                    param : 'Test_2',
-                    size  : 30
-                });
-
-new Frame({
-    param   : [50,200],
-    layout  : new Horiz(),  // set horizon layout
-    child   : [text1,text2],
+new mofron.Component({
+    layout  : new Horizon(),
+    child   : [new Text('child 1'),
+               new Text('child 2'),
+               new Text('child 3')],
     visible : true
 });
 ```
