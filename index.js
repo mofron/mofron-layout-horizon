@@ -19,10 +19,14 @@ mofron.layout.Horizon = class extends mofron.Layout {
         }
     }
     
-    layout () {
+    layoutConts () {
         try {
-            this.target().style('display', '-webkit-flex');
-            this.target().style('display', 'flex');
+            if (0 === this.m_execnt++) {
+                this.target().style({
+                    'display' : '-webkit-flex',
+                    'display' : 'flex'
+                });
+            }
         } catch (e) {
             console.error(e.stack);
             throw e;
