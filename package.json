@@ -1,6 +1,6 @@
 {
   "name": "mofron-layout-horizon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "horizon layout for mofron",
   "main": "index.js",
   "scripts": {

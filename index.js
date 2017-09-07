@@ -9,9 +9,9 @@
  */
 mofron.layout.Horizon = class extends mofron.Layout {
     
-    constructor (prm_opt) {
+    constructor (po) {
         try {
-            super();
+            super({});
             this.name('Horizon');
         } catch (e) {
             console.error(e.stack);
