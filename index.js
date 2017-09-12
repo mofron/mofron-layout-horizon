@@ -11,7 +11,7 @@ mofron.layout.Horizon = class extends mofron.Layout {
     
     constructor (po) {
         try {
-            super({});
+            super();
             this.name('Horizon');
         } catch (e) {
             console.error(e.stack);
