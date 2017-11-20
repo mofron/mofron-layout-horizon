@@ -27,6 +27,11 @@ mofron.layout.Horizon = class extends mofron.Layout {
                     'display' : 'flex'
                 });
             }
+            if (null !== this.target().parent()) {
+                this.target().style({
+                    '-webkit-padding-start' : '0.1px'
+                });
+            }
         } catch (e) {
             console.error(e.stack);
             throw e;
