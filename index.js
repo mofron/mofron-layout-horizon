@@ -19,17 +19,12 @@ mofron.layout.Horizon = class extends mofron.Layout {
         }
     }
     
-    layoutConts () {
+    contents () {
         try {
             if (0 === this.m_execnt++) {
-                this.target().style({
+                this.component().style({
                     'display' : '-webkit-flex',
                     'display' : 'flex'
-                });
-            }
-            if (null !== this.target().parent()) {
-                this.target().style({
-                    '-webkit-padding-start' : '0.1px'
                 });
             }
         } catch (e) {
