@@ -19,14 +19,12 @@ mofron.layout.Horizon = class extends mofron.Layout {
         }
     }
     
-    contents () {
+    execute () {
         try {
-            if (0 === this.m_execnt++) {
-                this.component().style({
-                    'display' : '-webkit-flex',
-                    'display' : 'flex'
-                });
-            }
+            this.component().style({
+                'display' : '-webkit-flex',
+                'display' : 'flex'
+            });
         } catch (e) {
             console.error(e.stack);
             throw e;
@@ -34,3 +32,4 @@ mofron.layout.Horizon = class extends mofron.Layout {
     }
 }
 module.exports = mofron.layout.Horizon;
+/* end of file */

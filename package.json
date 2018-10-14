@@ -1,6 +1,6 @@
 {
   "name": "mofron-layout-horizon",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "horizon layout for mofron",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/simpart/mofron-layout-horizon.git"
   },
   "keywords": [
-    "mofron"
+    "front-end"
   ],
   "author": "simparts",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/simpart/mofron-layout-horizon/issues"
   },
