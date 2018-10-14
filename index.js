@@ -1,13 +1,14 @@
 /**
- * @file index.js
+ * @file mofron-layout-horizon/index.js
+ * @brief horizon layout for mofron
  * @author simpart
  */
-
+const mf = require('mofron');
 /**
  * @class layout.Horizon
  * @brief horizon layout class
  */
-mofron.layout.Horizon = class extends mofron.Layout {
+mf.layout.Horizon = class extends mf.Layout {
     
     constructor (po) {
         try {
@@ -18,7 +19,11 @@ mofron.layout.Horizon = class extends mofron.Layout {
             throw e;
         }
     }
-    
+    /**
+     * set horizon style
+     *
+     * @note private method
+     */
     execute () {
         try {
             this.component().style({
@@ -31,5 +36,5 @@ mofron.layout.Horizon = class extends mofron.Layout {
         }
     }
 }
-module.exports = mofron.layout.Horizon;
+module.exports = mf.layout.Horizon;
 /* end of file */
