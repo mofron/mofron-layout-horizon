@@ -1,16 +1,16 @@
 /**
  * @file mofron-layout-horizon/index.js
  * @brief horizon layout for mofron
- * @author simpart
+ *        target component of children is positioned horizontally.
+ * @license MIT
  */
-const mf = require('mofron');
-/**
- * @class layout.Horizon
- * @brief horizon layout class
- */
-mf.layout.Horizon = class extends mf.Layout {
-    
-    constructor (po) {
+module.exports = class extends mofron.class.Layout {
+    /**
+     * initialize layout
+     * 
+     * @type private
+     */
+    constructor () {
         try {
             super();
             this.name('Horizon');
@@ -22,7 +22,7 @@ mf.layout.Horizon = class extends mf.Layout {
     /**
      * set horizon style
      *
-     * @note private method
+     * @type private
      */
     execute () {
         try {
@@ -36,5 +36,4 @@ mf.layout.Horizon = class extends mf.Layout {
         }
     }
 }
-module.exports = mf.layout.Horizon;
 /* end of file */

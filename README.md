@@ -1,25 +1,26 @@
-# mofron-layout-hrizon
-Horizon layout for mofron component.<br>
-This layout displays component side by side.<br>
-please see [here](https://github.com/simpart/mofron) about an overview of mofron.
+# mofron-layout-horizon
+[mofron](https://mofron.github.io/mofron/) is module based frontend framework.
+
+horizon layout for mofron
+
+target component of children is positioned horizontally.
+
 
 # Install
-
-```bash
-npm install mofron-layout-hrzcenter
+```
+npm install mofron mofron-layout-horizon
 ```
 
-# sample
-```javascript
-require('mofron');
-let Text    = require('mofron-comp-text');
-let Horizon = require('mofron-layout-horizon');
+# Sample
+```html
+<require>
+    <tag load="mofron-comp-text">Text</tag>
+    <tag load="mofron-layout-horizon">Horizon</tag>
+</require>
 
-new mofron.Component({
-    layout  : new Horizon(),
-    child   : [new Text('child 1'),
-               new Text('child 2'),
-               new Text('child 3')],
-    visible : true
-});
+<div layout=Horizon()>
+    <Text>Horizon</Text>
+    <Text>Layout</Text>
+</div>
 ```
+

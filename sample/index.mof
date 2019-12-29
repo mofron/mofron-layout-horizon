@@ -1,0 +1,9 @@
+<require>
+    <tag load="mofron-comp-text">Text</tag>
+    <tag load="mofron-layout-horizon">Horizon</tag>
+</require>
+
+<div layout=Horizon()>
+    <Text>Horizon</Text>
+    <Text>Layout</Text>
+</div>
