@@ -13,7 +13,7 @@ module.exports = class extends mofron.class.Layout {
     constructor () {
         try {
             super();
-            this.name('Horizon');
+            this.modname('Horizon');
         } catch (e) {
             console.error(e.stack);
             throw e;

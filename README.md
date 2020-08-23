@@ -13,14 +13,19 @@ npm install mofron mofron-layout-horizon
 
 # Sample
 ```html
-<require>
+<setting>
     <tag load="mofron-comp-text">Text</tag>
     <tag load="mofron-layout-horizon">Horizon</tag>
-</require>
+</setting>
 
 <div layout=Horizon()>
     <Text>Horizon</Text>
     <Text>Layout</Text>
 </div>
 ```
+
+# Parameter
+
+| Short<br>Form | Parameter Name | Type | Description |
+|:-------------:|:---------------|:-----|:------------|
 
